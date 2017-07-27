@@ -81,6 +81,8 @@ p.small {
 
 .carousel-caption {
   top: calc(30vh - 70px);
+  width: 50%;
+  left: 25%
 }
 
 .carousel-caption h1 {
@@ -88,7 +90,7 @@ p.small {
 }
 
 .carousel-caption p {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .carousel-caption a.btn-primary {
@@ -118,16 +120,19 @@ p.small {
   margin-bottom: 0px;
 }
 
-.navbar-lead .navbar-header {
-  width: 100%;
-}
-
 .navbar-lead .navbar-header .navbar-right {
   margin-right: 0px !important;
 }
 
 .navbar-lead .navbar-brand > img {
   display: inline;
+  bottom: 15px;
+  position: relative;
+}
+
+.navbar-lead .navbar-toggle {
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 
 .navbar-lead .navbar-nav > li > a,
@@ -139,6 +144,11 @@ p.small {
 
 .navbar-lead .navbar-nav > li > a:hover {
   color: #949494;
+}
+
+.navbar-lead .navbar-nav > li.call-to-action {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar-lead .navbar-nav > li > a.btn-primary {
@@ -257,6 +267,10 @@ p.small {
   padding: 15px 20px;
 }
 
+#contact {
+  margin-bottom: -5px;
+}
+
 #contact .channels {
   margin-top: 25px;
 }
@@ -270,6 +284,10 @@ p.small {
   margin-bottom: 5px;
 }
 
+#contact #map {
+  height: 400px;
+}
+
 #newsletter .form-inline {
   margin-top: 30px;
 }
@@ -280,6 +298,10 @@ p.small {
 
 #newsletter input {
   width: calc(100% - 150px);
+}
+
+#footer .social-networks {
+  float: right;
 }
 
 #footer .social-networks a.box {

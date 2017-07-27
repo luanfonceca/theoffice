@@ -15,6 +15,7 @@
 
     <!-- The Office css -->
     <link rel="stylesheet" href="static/css/app.css">
+    <link rel="stylesheet" href="static/css/responsive-app.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,9 +36,7 @@
           <img src="static/img/slides/01.png" data-color="#747AA8" alt="Venha fazer negócios junto conosco.">
           <div class="carousel-caption">
             <h1>
-              Venha fazer negócios
-              <br> 
-              junto conosco.
+              Venha fazer negócios junto conosco.
             </h1>
             <p class="lead small">
               Temos um espaço de coworking, salas privadas, sala de reunião e tudo para oferecer um suporte nas suas negociações.
@@ -61,15 +60,23 @@
     <nav class="navbar navbar-default navbar-lead">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:;">
             <img src="static/img/menu-logo.png" alt="The Office Coworking Logo">
           </a>
+        </div>
+        <div id="navbar1" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about">O que é</a></li>
             <li><a href="#pricing">Planos de Coworking</a></li>
             <li><a href="#our-structure">Nossa estrutura</a></li>
             <li><a href="#">Parceiros</a></li>
-            <li>
+            <li class="call-to-action">
               <a class="btn btn-primary" href="#">
                 Agende uma visita
                 <i class="fa fa-fw fa-chevron-right"></i>
@@ -82,19 +89,13 @@
 
     <div id="about" class="container-fluid">
       <h1 class="primary-color text-center">
-        O que é
-        <br> 
-        um coworking?
+        O que é um coworking?
       </h1>
       <p class="lead small light-color text-center">
-        Coworking é uma nova forma de pensar o ambiente de trabalho.
-        <br>
-        Você encontra ambientes especialmente pensados para
-        <br>
-        o trabalho autônomo, muito networking com pessoas de diversas
-        <br>
-        áreas e toda a estrutura para receber seus clientes com um custo
-        <br>
+        Coworking é uma nova forma de pensar o ambiente de trabalho. 
+        Você encontra ambientes especialmente pensados para 
+        o trabalho autônomo, muito networking com pessoas de diversas 
+        áreas e toda a estrutura para receber seus clientes com um custo 
         menor do que teria ao alugar uma sala comercial.
       </p>
 
@@ -133,15 +134,23 @@
     <nav class="navbar navbar-default navbar-lead">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:;">
             <img src="static/img/menu-logo.png" alt="The Office Coworking Logo">
           </a>
+        </div>
+        <div id="navbar2" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about">O que é</a></li>
             <li><a href="#pricing">Planos de Coworking</a></li>
             <li><a href="#our-structure">Nossa estrutura</a></li>
             <li><a href="#">Parceiros</a></li>
-            <li>
+            <li class="call-to-action">
               <a class="btn btn-primary" href="#">
                 Agende uma visita
                 <i class="fa fa-fw fa-chevron-right"></i>
@@ -154,9 +163,7 @@
 
     <div class="container-fluid" id="pricing">
       <h1 class="inverse-color text-center">
-        Planos para
-        <br>
-        coworkers
+        Planos para coworkers
       </h1>
 
       <div class="row pricing-table">
@@ -242,7 +249,6 @@
 
       <p class="text-center inverse-color">
         Não encontrou um plano que se encaixe no seu negócio?
-        <br>
         Temos uma solução! <a href="javascript:;">Clique aqui</a>.
       </p>
     </div>
@@ -250,15 +256,23 @@
     <nav class="navbar navbar-default navbar-lead">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:;">
             <img src="static/img/menu-logo.png" alt="The Office Coworking Logo">
           </a>
+        </div>
+        <div id="navbar3" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about">O que é</a></li>
             <li><a href="#pricing">Planos de Coworking</a></li>
             <li><a href="#our-structure">Nossa estrutura</a></li>
             <li><a href="#">Parceiros</a></li>
-            <li>
+            <li class="call-to-action">
               <a class="btn btn-primary" href="#">
                 Agende uma visita
                 <i class="fa fa-fw fa-chevron-right"></i>
@@ -300,8 +314,8 @@
       <img src="static/img/backgrounds/day-in-use.png" class="img-responsive" style="width: 100%;" alt="The Office Coworking Logo">
     </div>
 
-    <div id="contact" class="padded-container">
-      <div class="container-fluid bg-white-color">
+    <div id="contact">
+      <div class="container-fluid padded-container bg-white-color">
         <div class="primary-color">
           <div class="row">
             <div class="col-md-6">
@@ -313,25 +327,28 @@
                 Such motivations come before profit.
               </p>
             </div>
-            <div class="col-md-3 channels text-center">
-              <i class="fa fa-fw fa-whatsapp"></i>
-              <p class="light-color">
-                Nos envie um whattsapp:
-                <br>
-                <a href="tel+558499191.9191">(84) 99191.9191</a>
-              </p>
-            </div>
-            <div class="col-md-3 channels text-center">
-              <i class="fa fa-fw fa-comments-o"></i>
-              <p class="light-color">
-                Fale conosco pelo nosso
-                <br>
-                atendimento online.
-              </p>
+            <div class="col-md-6">
+              <div class="col-xs-6 channels text-center">
+                <i class="fa fa-fw fa-whatsapp"></i>
+                <p class="light-color">
+                  Nos envie um whattsapp:
+                  <br>
+                  <a href="tel+558499191.9191">(84) 99191.9191</a>
+                </p>
+              </div>
+              <div class="col-xs-6 channels text-center">
+                <i class="fa fa-fw fa-comments-o"></i>
+                <p class="light-color">
+                  Fale conosco pelo nosso
+                  <br>
+                  atendimento online.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="map"></div>
     </div>
 
     <div id="newsletter">
@@ -368,10 +385,10 @@
           </p>
         </div>
         <div class="pull-right social-networks light-color">
-          <a href="#"class="box">
+          <a href="https://www.facebook.com/TheOffice.Co" target="_blank" class="box">
             <i class="fa fa-fw fa-facebook"></i>
           </a>
-          <a href="#"class="box">
+          <a href="https://www.instagram.com/TheOffice.Co" target="_blank" class="box">
             <i class="fa fa-fw fa-instagram"></i>
           </a>
         </div>
@@ -380,9 +397,6 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <ul class="nav navbar-nav">
-              <li>
-                <img src="static/img/menu-logo.png" alt="The Office Coworking Logo">
-              </li>
               <li>
                 <img src="static/img/menu-logo.png" alt="The Office Coworking Logo">
               </li>
@@ -404,6 +418,7 @@
     <!-- Libs -->
     <script type="text/javascript" src="static/libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyCrgJ2UACk3kxFMHMhDilfDLaiRD3yRcRs"></script>
 
     <!-- The Office js -->
     <script src="static/js/app.js"></script>
