@@ -1,6 +1,6 @@
 // Full page carousel
 var item = $('.carousel .item'); 
-var height = $(window).height() - 100;
+var height = $(window).height() - 92;
 
 item.eq(0).addClass('active');
 item.height(height); 
@@ -24,6 +24,17 @@ $(window).on('resize', function (){
 $('.carousel').carousel({
   interval: 6000,
   pause: "false"
+});
+
+// Affix navbar
+$('.navbar-lead').affix({
+  offset: {
+    top: $('.navbar-lead').offset().top
+  }
+}).on('affix.bs.affix', function(e) {
+  $('#about').css('margin-top', $('.navbar-lead').height());
+}).on('affix-top.bs.affix', function(e) {
+  $('#about').css('margin-top', 0);
 });
 
 var map;

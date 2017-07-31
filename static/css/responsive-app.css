@@ -1,3 +1,9 @@
+@media (min-width: 1024px) {
+  .container-fluid {
+    width: 970px;
+   }
+}
+
 @media (min-width: 991px){
   h1 {
     font-size: 50px;

@@ -32,6 +32,10 @@ p.small {
   color: #fff;
 }
 
+.btn-bigger {
+  padding: 20px 25px;
+}
+
 .primary-color {
   color: #254d8b;
 }
@@ -93,10 +97,6 @@ p.small {
   margin-bottom: 40px;
 }
 
-.carousel-caption a.btn-primary {
-  padding: 20px 25px;
-}
-
 .carousel-indicators {
   margin-bottom: 45px;
 }
@@ -116,8 +116,17 @@ p.small {
 
 .navbar-lead {
   background-color: #fff;
+  border-left: none;
+  border-right: none;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 0px;
+}
+
+.navbar-lead.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .navbar-lead .navbar-header .navbar-right {
