@@ -84,3 +84,12 @@ function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
+
+
+var feed = new Instafeed({
+  get: 'user',
+  userId: 'theoffice.co',
+  clientId: '28174406217d462f9e0b6fff4fd17bf2',
+  accessToken: '1396994756.2817440.0017197cce83439dbcf25e8bf7ff28e2',
+});
+feed.run();
