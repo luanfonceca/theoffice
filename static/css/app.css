@@ -276,7 +276,13 @@ p.small {
   padding: 15px 20px;
 }
 
-#instafeed img {
+#day-in-use .btn-bigger {
+  text-align: right;
+  position: relative;
+  top: 60px;
+}
+
+#day-in-use #instafeed img {
   width: calc(100% / 6);
 }
 

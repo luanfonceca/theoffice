@@ -29,8 +29,13 @@
     margin-bottom: 20px;
   }
 
-  .feature, .pricing-item {
+  #day-in-use .col-md-3 {
+    margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  #day-in-use a.btn-bigger {
+    top: 0px;
   }
 }
 
