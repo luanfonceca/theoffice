@@ -46,6 +46,10 @@
     left: 5%;
   }
 
+  #instafeed img {
+    width: calc(100% / 3);
+  }
+
   #footer .social-networks {
     float: none !important;
     text-align: center;

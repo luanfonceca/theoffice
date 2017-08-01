@@ -276,6 +276,10 @@ p.small {
   padding: 15px 20px;
 }
 
+#instafeed img {
+  width: calc(100% / 6);
+}
+
 #contact {
   margin-bottom: -5px;
 }
