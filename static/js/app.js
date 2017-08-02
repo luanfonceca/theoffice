@@ -95,3 +95,15 @@ var feed = new Instafeed({
   template: '<a target="_blank" href="{{link}}"><img src="{{image}}" /></a>'
 });
 feed.run();
+
+$('form').ajaxChimp({
+  url: 'http://theofficeco.us15.list-manage.com/subscribe/post?u=dc012226ccd97e468496f29f5&amp;id=21390fd4e0',
+  callback: function (response) {
+    $('form .alert').addClass('hide');
+    if (response.result == 'success') {
+      $('form .alert-success').removeClass('hide');
+    } else {
+      $('form .alert-danger').removeClass('hide');
+    }
+  },
+});
