@@ -100,10 +100,16 @@ $('form').ajaxChimp({
   url: 'http://theofficeco.us15.list-manage.com/subscribe/post?u=dc012226ccd97e468496f29f5&amp;id=21390fd4e0',
   callback: function (response) {
     $('form .alert').addClass('hide');
+    debugger;
     if (response.result == 'success') {
       $('form .alert-success').removeClass('hide');
     } else {
-      $('form .alert-danger').removeClass('hide');
+      var already_subscriber = response.msg.indexOf('is already subscribed');
+      if (already_subscriber != -1) {
+        $('form .alert-warning').removeClass('hide');
+      } else {
+        $('form .alert-danger').removeClass('hide');
+      }
     }
   },
 });
