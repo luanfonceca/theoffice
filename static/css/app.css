@@ -276,6 +276,18 @@ p.small {
   padding: 15px 20px;
 }
 
+#our-structure video {
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+#our-structure .container-fluid a {
+  z-index: 1;
+}
+
 #day-in-use .btn-bigger {
   text-align: right;
   position: relative;
@@ -341,4 +353,23 @@ p.small {
 
 #footer .social-networks i {
   font-size: 2em;
+}
+
+.video-container {
+  position: relative;
+}
+
+video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.overlay-desc {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

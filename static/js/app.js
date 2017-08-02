@@ -85,7 +85,6 @@ function initMap() {
 
 google.maps.event.addDomListener(window, 'load', initMap);
 
-
 var feed = new Instafeed({
   get: 'user',
   userId: '1396994756',
