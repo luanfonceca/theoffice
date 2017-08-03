@@ -1,7 +1,7 @@
 @media (min-width: 1024px) {
   .container-fluid {
     width: 970px;
-   }
+  }
 }
 
 @media (min-width: 991px){
@@ -37,11 +37,24 @@
   #day-in-use a.btn-bigger {
     top: 0px;
   }
+
+  #newsletter .form-group {
+    width: 60% !important;
+  }
 }
 
 @media (max-width: 767px){
   h1 {
     font-size: 40px;
+  }
+
+  #newsletter .form-group {
+    width: 100% !important;
+    display: inline-flex;
+  }
+
+  #newsletter .form-group .form-control {
+    margin-right: 5px;
   }
 }
 

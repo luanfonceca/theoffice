@@ -85,10 +85,13 @@ function initMap() {
 
 google.maps.event.addDomListener(window, 'load', initMap);
 
+// https://api.instagram.com/oauth/authorize/?client_id=28174406217d462f9e0b6fff4fd17bf2&redirect_uri=http://127.0.0.1:8000&response_type=token
 var feed = new Instafeed({
   get: 'user',
-  userId: '1396994756',
-  accessToken: '1396994756.2817440.0017197cce83439dbcf25e8bf7ff28e2',
+  // userId: '1396994756',
+  // accessToken: '1396994756.2817440.0017197cce83439dbcf25e8bf7ff28e2',
+  userId: '4549450399',
+  accessToken: '4549450399.2817440.8eff94ad52434d5caffa3c8c61544e4d',
   clientId: '28174406217d462f9e0b6fff4fd17bf2',
   sortBy: 'most-recent',
   limit: 12,
@@ -100,12 +103,12 @@ $('form').ajaxChimp({
   url: 'http://theofficeco.us15.list-manage.com/subscribe/post?u=dc012226ccd97e468496f29f5&amp;id=21390fd4e0',
   callback: function (response) {
     $('form .alert').addClass('hide');
-    debugger;
     if (response.result == 'success') {
       $('form .alert-success').removeClass('hide');
     } else {
-      var already_subscriber = response.msg.indexOf('is already subscribed');
-      if (already_subscriber != -1) {
+      var is_already_subscriber = response.msg.indexOf(
+        'is already subscribed') != -1;
+      if (is_already_subscriber) {
         $('form .alert-warning').removeClass('hide');
       } else {
         $('form .alert-danger').removeClass('hide');
@@ -113,3 +116,31 @@ $('form').ajaxChimp({
     }
   },
 });
+
+$('#pricing-Carousel').carousel({
+  interval: false
+});
+
+$('#pricing .carousel .item').each(function(){
+  $(this).height(
+    $(this).find('.pricing-item').height()
+  );
+});
+
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+if (width >= 768) {
+  $('#pricing .carousel .item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    if (next.next().length > 0) {
+      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+    }
+    else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+    }
+  });
+}
