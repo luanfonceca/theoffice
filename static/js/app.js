@@ -118,7 +118,7 @@ $('form').ajaxChimp({
 });
 
 $('#pricing-Carousel').carousel({
-  interval: false
+  interval: null
 });
 
 $('#pricing .carousel .item').each(function(){
