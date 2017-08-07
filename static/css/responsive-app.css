@@ -10,6 +10,27 @@
   }
 }
 
+@media (min-width: 768px){
+  #pricing-carousel .carousel-inner .item.left.active {
+    transform: translateX(-33%);
+  }
+  #pricing-carousel .carousel-inner .item.right.active {
+    transform: translateX(33%);
+  }
+
+  #pricing-carousel .carousel-inner .item.next {
+    transform: translateX(33%)
+  }
+  #pricing-carousel .carousel-inner .item.prev {
+    transform: translateX(-33%)
+  }
+
+  #pricing-carousel .carousel-inner .item.right,
+  #pricing-carousel .carousel-inner .item.left { 
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 991px){
   h1 {
     font-size: 54px;
@@ -40,6 +61,7 @@
 
   #newsletter .form-group {
     width: 60% !important;
+    text-center: center;
   }
 }
 
@@ -55,6 +77,14 @@
 
   #newsletter .form-group .form-control {
     margin-right: 5px;
+  }
+
+  .carousel-control.left {
+    margin-left: -30px;
+  }
+
+  .carousel-control.right {
+    margin-right: -30px;
   }
 }
 
@@ -81,5 +111,13 @@
 
   h1 {
     font-size: 26px;
+  }
+
+  .carousel-control.left {
+    margin-left: -20px;
+  }
+
+  .carousel-control.right {
+    margin-right: -20px;
   }
 }

@@ -376,5 +376,14 @@ video {
 
 .carousel-control.left,
 .carousel-control.right {
-  background-image: none
+  background-image: none;
+  width: 8%;
+}
+
+.carousel-control.left {
+  margin-left: -50px;
+}
+
+.carousel-control.right {
+  margin-right: -50px;
 }
